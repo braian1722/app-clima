@@ -1,0 +1,60 @@
+@mixin dispalayColumn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+main{
+    margin-bottom: 15px;
+}
+body{
+    
+    @include dispalayColumn;
+    height: 100vh;
+    background: #a8c0ff;  
+    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  
+    background: linear-gradient(to right, #3f2b96, #a8c0ff);
+
+}
+
+#container{
+    @include dispalayColumn();
+    height: 350px;
+    width: 350px;
+    gap: 20px;
+    background-color: rgba(0, 0,0,0.3);
+    border-radius: 20px;
+
+}
+
+#ubicacion-container{
+    img{
+        width: 128px;
+        height: 128px;
+    }
+}
+
+#date-container{
+    @include dispalayColumn();
+    margin-top: 20px;
+    #fecha{
+        font-size: 2rem;
+        width: 250px;
+        height: 250;
+        background-color: rgba(0, 0,0,0.3);
+        border-radius: 20px;
+
+    }
+
+}
+
